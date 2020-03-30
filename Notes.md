@@ -50,3 +50,19 @@ Pytest, unittest etc
 **PYTEST**
 
 Pytest collects all files and functions starting with 'test'
+
+
+
+## methods
+# Every method is followed by a set of # parentheses,
+# because methods often need additional information to do their work.
+# That information is provided inside the parentheses.
+
+- .title() 
+# The title() function
+# doesn’t need any additional information, so its parentheses are empty
+
+- .upper()
+- .lower()
+- 
+- 
