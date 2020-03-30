@@ -10,7 +10,7 @@ The title( ) function doesn’t need any additional information, so its parenthe
 - .lower( )
 - .rstrip( ) removeswhite white space at the end of the str
 - .lstrip( ) on the left
-- .strip from both sides
+- .strip() from both sides
 
 ## brakers
 - \n new line
@@ -29,7 +29,7 @@ method. You do this by specifying the index of the new element and the
 value of the new item.
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
-u motorcycles.insert(0, 'ducati')
+motorcycles.insert(0, 'ducati')
 print(motorcycles)
 
 ## Removing an Item Using the del Statement
@@ -39,3 +39,39 @@ motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 del motorcycles[0]
 print(motorcycles)
+
+## Removing an Item Using the pop() Method
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)
+
+## Removing an Item by Value
+If you only know the value of the item you want to remove, you
+can use the remove() method.
+The remove() method deletes only the first occurrence of the value you specify. If there’s
+a possibility the value appears more than once in the list, you’ll need to use a loop to
+determine if all occurrences of the value have been removed.
+
+## Sorting a List Permanently with the sort() Method
+Python’s sort() method makes it relatively easy to sort a list. Imagine we
+have a list of cars and want to change the order of the list to store them
+alphabetically. To keep the task simple, let’s assume that all the values in
+the list are lowercase.
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+
+### in reverse alphabetical order
+cars.sort(reverse=True)
+
+## Sorting a List Temporarily with the sorted() Function
+To maintain the original order of a list but present it in a sorted order, you
+can use the sorted() function. The sorted() function lets you display your list
+in a particular order but doesn’t affect the actual order of the list.
+
+print(sorted(cars))
+
+
+
