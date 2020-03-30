@@ -25,8 +25,21 @@ print(name.title())
 first_name = 'ada'
 last_name = 'lovelace'
 full_name = first_name + ' ' + last_name
+
+print('\n')
 print(full_name.title)
 
 
 print('Hello, ' + full_name.title() + '!')
+
+message = 'Hello, ' + full_name.title() + '!'
+print('\n' + message)
+
+print("Python")
+print('\tPython')
+
+print('hello')
+
+print("Languages:\n\tPython\n\tC\n\tJavaScript")
+
 
