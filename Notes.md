@@ -64,7 +64,9 @@ Pytest collects all files and functions starting with 'test'
 
 - .upper()
 - .lower()
-- 
+- .rstrip() removeswhite white space at the end of the str
+- .lstrip() on the left
+- .strip from both sides
 
 ## brakers
 - \n new line
