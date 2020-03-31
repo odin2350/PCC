@@ -81,3 +81,14 @@ reverse() doesn’t sort backward alphabetically; it simply reverses the order o
 You can quickly find the length of a list by using the len() function.
 >>> cars = ['bmw', 'audi', 'toyota', 'subaru']
 >>> len(cars)
+
+
+## Looping Through an Entire List
+
+for loop
+
+plural_object_name = [list]
+FOR single_object_name IN plural_object_name:
+    print(single_object_name)
+
+
