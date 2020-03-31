@@ -91,4 +91,24 @@ plural_object_name = [list]
 FOR single_object_name IN plural_object_name:
     print(single_object_name)
 
+## Using the range() Function
+Using the range() Function
+Python’s range() function makes it easy to generate a series of numbers.
+For example, you can use the range() function to print a series of numbers
+like this:
+    for value in range(1,5):
+        print(value)
+
+## Using range() to Make a List of Numbers
+If you want to make a list of numbers, you can convert the results of range()
+directly into a list using the list() function. When you wrap list() around a
+call to the range() function, the output will be a list of numbers.
+In the example in the previous section, we simply printed out a series of
+numbers. We can use list() to convert that same set of numbers into a list:
+numbers = list(range(1,6))
+print(numbers)\
+
+## Even numbers range
+even_numbers = list(range(2,11,2))
+print(even_numbers)
 
