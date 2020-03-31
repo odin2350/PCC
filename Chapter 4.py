@@ -127,8 +127,48 @@ players = ['charles', 'martina', 'michael', 'florence', 'eli']
 for player in players[0:3]:
     print(player)
 # slicing specific players from the list of players into a new list of new_players
-new_players = [player for player in players[0:3]]
+new_players = [player for player in players[:3]]
 print(new_players)
 
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
 
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+print('\n')
+
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+# Try it yourself
+
+# 4-10 Slices
+numbers = [number for number in range(1,21,2)]
+print(numbers)
+print("The first 3 items in the list are " + str(numbers[:3]))
+middle = max(numbers)/min(numbers)
+print("item from the middle of the range is  " + str(middle))
+print("Some from the middle " + str(numbers[4:-3]))
+print("The last 3 items in the list are " + str(numbers[-3:]))
+
+# 4-11. My Pizzas, Your Pizzas
+pizzas = ['meat lover', 'mushroom', 'buffalo chicken']
+friends_pizzas = pizzas[:]
+pizzas.append('cheesy')
+friends_pizzas.append("herring")
+print("\nMy favorite pizzas are: ")
+for pizza in pizzas:
+    print(str(pizza) + " pizza.")
+
+print("\nMy friend’s favorite pizzas are: ")
+for pizza in friends_pizzas:
+    print("\t" + str(pizza) + " pizza.")
+
+# Tuples
 
