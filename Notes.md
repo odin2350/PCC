@@ -112,3 +112,61 @@ print(numbers)\
 even_numbers = list(range(2,11,2))
 print(even_numbers)
 
+## squares
+squares = []
+for value in range(1,11):
+    square = value**2
+    squares.append(square)
+print(squares)
+
+squares = []
+for value in range(1,11):
+   squares.append(value**2)
+print(squares)
+
+## Simple Statistics with a List of Numbers
+min max sum
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+min(digits)
+max(digits)
+sum(digits)
+
+
+## List Comprehensions
+The approach described earlier for generating the list squares consisted of
+using three or four lines of code. A list comprehension allows you to generate
+this same list in just one line of code. A list comprehension combines the
+for loop and the creation of new elements into one line, and automatically
+appends each new element. List comprehensions are not always presented
+to beginners, but I have included them here because you’ll most likely see
+them as soon as you start looking at other people’s code.
+* result = [goal**2 FOR goal IN range(0,12)]
+* squares = [value**2 for value in range(1,11)]
+* print(squares)
+
+# Working with Part of a List
+## Slicing a List
+To make a slice, you specify the index of the first and last elements you
+want to work with. As with the range() function, Python stops one item
+before the second index you specify. To output the first three elements
+in a list, you would request indices 0 through 3, which would return elements
+0, 1, and 2.
+The following example involves a list of players on a team:
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3])
+
+
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[:4])
+Without a starting index, Python starts at the beginning of the list:
+['charles', 'martina', 'michael', 'florence']
+
+This syntax allows you to output all of the elements from any point in
+your list to the end regardless of the length of the list. Recall that a negative
+index returns an element a certain distance from the end of a list;
+therefore, you can output any slice from the end of a list. For example, if
+we want to output the last three players on the roster, we can use the slice
+players[-3:]:
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[-3:])
+
