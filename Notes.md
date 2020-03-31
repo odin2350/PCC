@@ -1,3 +1,8 @@
+# Style Guidelines
+## PEP 8
+## import this
+The Zen of Python, by Tim Peters
+
 # methods
 Every method is followed by a set of ( ) parentheses,
 because methods often need additional information to do their work.
@@ -70,8 +75,21 @@ cars.sort(reverse=True)
 To maintain the original order of a list but present it in a sorted order, you
 can use the sorted() function. The sorted() function lets you display your list
 in a particular order but doesn’t affect the actual order of the list.
+* print(sorted(cars))
 
-print(sorted(cars))
+- sorted(iterable, key=None, reverse=False)
+
+sorted() can take a maximum of three parameters:
+- iterable - A sequence (string, tuple, list) or collection (set, dictionary, frozen set) or any other iterator.
+- reverse (Optional) - If True, the sorted list is reversed (or sorted in descending order). Defaults to False if not provided.
+
+py_set = {'e', 'a', 'u', 'o', 'i'}
+print(sorted(py_set, reverse = True))
+
+- key (Optional) - A function that serves as a key for the sort comparison. Defaults to
+
+
+
 
 ## Printing a List in Reverse Order
 To reverse the original order of a list, you can use the reverse() method.
@@ -179,3 +197,22 @@ print("My favorite foods are:")
 print(my_foods)
 print("\nMy friend's favorite foods are:")
 print(friend_foods)
+
+# Tuples
+Lists work well for storing sets of items that can change throughout the
+life of a program. The ability to modify lists is particularly important when
+you’re working with a list of users on a website or a list of characters in a
+game. However, sometimes you’ll want to create a list of items that cannot
+change. Tuples allow you to do just that. Python refers to values that cannot
+change as immutable, and an immutable list is called a tuple.
+
+## Defining a Tuple
+A tuple looks just like a list except you use parentheses instead of square
+brackets. Once you define a tuple, you can access individual elements by
+using each item’s index, just as you would for a list.
+70 Chapter 4
+For example, if we have a rectangle that should always be a certain size,
+we can ensure that its size doesn’t change by putting the dimensions into a tuple: 
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])

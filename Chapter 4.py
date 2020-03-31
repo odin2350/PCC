@@ -168,7 +168,37 @@ for pizza in pizzas:
 
 print("\nMy friend’s favorite pizzas are: ")
 for pizza in friends_pizzas:
-    print("\t" + str(pizza) + " pizza.")
+    print("\t" + str(pizza) + " pizza.\n")
 
 # Tuples
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+print('\n')
+print('\n')
+dimensions = (200, 50)
+for dimension in dimensions:
+    print(dimension)
+print('\n')
+dimensions = (200, 50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
 
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+print('\n')
+# Try it yourself
+# 4-13 Buffet
+buffet = ('rice', 'pasta', 'mashed potatoes', 'grilled chicken', 'mushrooms')
+for food in sorted(buffet, reverse = True):
+    print(food)
+print('\n')
+print(sorted(buffet))
+print('\n')
+buffet= ('avocado', 'french fries', 'rice', 'pasta', 'mashed potatoes', 'grilled chicken', 'mushrooms')
+for food in sorted(buffet):
+    print(food)
+print('\n')
