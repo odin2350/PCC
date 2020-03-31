@@ -134,5 +134,72 @@ print(sorted(cars))
 print('\nHere is the original again:')
 print(cars)
 
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("\n")
+print(cars)
+cars.reverse()
+print(cars)
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+len(cars)
+print(len(cars))
 
 
+# Try it yourself
+# 3-8 Seeing the World
+places = ["paris", 'tokyo', 'new york', 'wayne', 'moscow']
+print("\n")
+print(places)
+
+print(sorted(places))
+print(places)
+print('\n')
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+print('\n')
+
+places.sort()
+print(places)
+
+places.sort(reverse = True)
+print(places)
+
+# 3-9 Dinner Guests
+
+guests = ['dima', 'jack', 'mike']
+guests.insert(0, 'Kate')
+guests.insert(3, 'Jane')
+guests.append('Sam')
+print('So ' + str(len(guests)) + ' people are coming over tonight.')
+print('\n')
+guests = ['dima', 'jack', 'mike']
+guests.insert(0, 'Kate')
+guests.insert(3, 'Jane')
+guests.append('Sam')
+people_coming = str(len(guests))
+print('So ' + str(people_coming) + ' people are coming over tonight.')
+
+
+# 3-10
+print('\n')
+random = ['river', 'gas', 'book', 'water', 'food']
+print(random)
+print(sorted(random))
+random.reverse()
+print(random)
+random.sort()
+print(random)
+random.sort(reverse = True)
+print(random)
+print('\n')
+random.append('computer')
+random.insert(0,'remote')
+print(random)
+print(random.pop())
+print(random)
+random.remove('book')
+print(random)
+del random[-1]
+print(random)
