@@ -3,6 +3,19 @@
 ## import this
 The Zen of Python, by Tim Peters
 
+## diffrent
+- a = 15   = is a stament that a is 15
+- == equality operator for IF statments
+a == 15 true if a is 15 false if 
+case sensetive 
+
+- != not equal
+
+- To find out whether a particular value is already in a list, use the keyword in
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+'mushrooms' IN requested_toppings
+
+
 # methods
 Every method is followed by a set of ( ) parentheses,
 because methods often need additional information to do their work.
