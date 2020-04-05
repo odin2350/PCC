@@ -14,7 +14,9 @@ case sensetive
 - To find out whether a particular value is already in a list, use the keyword in
 requested_toppings = ['mushrooms', 'onions', 'pineapple']
 'mushrooms' IN requested_toppings
-
+- Value Is Not in a List
+if user NOT IN banned_users:
+print(user.title() + ", you can post a response if you wish.")
 
 # methods
 Every method is followed by a set of ( ) parentheses,
