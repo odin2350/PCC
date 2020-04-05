@@ -92,8 +92,87 @@ if age in range(0,120):
     print("Your admission cost is $" + str(price) + '.')
 else:
     print(price)
+print('\n')
 
-
+#trying if with for loop
 requested_toppings = ['mushrooms', 'extra cheese']
-if topping in requested_toppings:
-    print("Adding " + str(topping.little())
+for topping in requested_toppings:
+    if topping in requested_toppings:
+        print("Adding " + topping)
+print("Your order is in the oven.")
+print('\n')
+
+# checking if condition one by one
+requested_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")      
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+if 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
+print("Your order is in the oven." + '\n')
+
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    print("Adding " + requested_topping + ".")
+print("Finished making your pizza!"+ '\n')
+
+# But what if the pizzeria runs out of green peppers
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':
+        print("Sorry, we are out of green peppers right now.")
+    else:
+        print("Adding " + requested_topping + ".")
+print("Finished making your pizza!" + '\n')
+
+requested_toppings = []
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print("Adding " + requested_topping + ".")
+        print("\nFinished making your pizza!")
+else:
+    print("Are you sure you want a plain pizza?" + '\n')
+
+available_toppings = ['mushrooms', 'olives', 'green peppers',
+'pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print("Adding " + requested_topping + ".")
+    else:
+        print("Sorry, we don't have " + requested_topping + ".")
+print("Finished making your pizza!" + '\n')
+
+# Try it yourself
+# 5-8 Hello Admin
+usernames = ['user_1', 'user_2','mike','allan', 'cat', 'admin']
+for user in usernames:
+    if user == 'admin':
+        print("Hello boss")
+    else:
+        print("Greetings " + str(user.title()) + " fellow human")
+print('\n')
+
+#5-9 no users
+usernames = []
+if usernames:
+    for user in usernames:
+        if user == 'admin':
+            print("Hello boss")
+        else:
+            print("Greetings " + str(user.title()) + " fellow human")
+else:
+    print('I need to find more fellow humans')
+print('\n')
+
+# 5-10  Checking Usernames
+current_users = ['user_1', 'user_2','mike','allan', 'cat', 'admin']
+new_users = ["user_3",'admin','user_5','USER_2']
+for new_user in new_users:
+    if str(new_user).lower() in str(current_users).lower():
+        print(new_user + ' You need to enter a new user name')
+    else:
+        print(new_user + ' You can register this user name.')
+
+
