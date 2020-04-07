@@ -231,3 +231,34 @@ we can ensure that its size doesn’t change by putting the dimensions into a tu
 dimensions = (200, 50)
 print(dimensions[0])
 print(dimensions[1])
+
+# dictionaries:
+dictionary in Python is a collection of key-value pairs. Each key is connected
+to a value, and you can use a key to access the value associated with that key.
+A key’s value can be a number, a string, a list, or even another dictionary.
+In fact, you can use any object that you can create in Python as a value in a
+dictionary.
+In Python, a dictionary is wrapped in braces, {}, with a series of keyvalue
+pairs inside the braces, as shown in the earlier example:
+
+* alien_0 = {'color': 'green', 'points': 5}
+
+## Removing Key-Value Pairs
+When you no longer need a piece of information that’s stored in a dictionary,
+you can use the del statement to completely remove a key-value pair.
+All del needs is the name of the dictionary and the key that you want to
+remove.
+For example, let’s remove the key 'points' from the alien_0 dictionary
+along with its value:
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+* del alien_0['points']
+print(alien_0)
+
+## A Dictionary of Similar Objects
+favorite_languages = {
+'jen': 'python',
+'sarah': 'c',
+'edward': 'ruby',
+'phil': 'python',
+}
