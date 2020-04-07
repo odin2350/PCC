@@ -89,15 +89,4 @@ print('\n')
 lucky_numbers['joey'] = '2'
 print(lucky_numbers)
 print('\n')
-fav_numbers = {
-	'luke': 4,
-	'william': 13,
-	'allie': 11,
-	'sookie': 100,
-	'elsa':1,
-}
-
-print("Luke's favorite number is " + str(fav_numbers['luke']))
-print("William's favorite number is " + str(fav_numbers['william']))
-print('\n')
 
