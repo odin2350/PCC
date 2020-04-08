@@ -89,7 +89,7 @@ print('\n')
 lucky_numbers['joey'] = '2'
 print(lucky_numbers)
 print('\n')
-# creating the loop that go thru dictionary first value 'key_word' call for key in the dictionary
+#creating the loop that go thru dictionary first value 'key_word' call for key in the dictionary
 #key word goes in the loop thru dictionary test
 #When call for the key_word we get the 'Key'
 # when need value call for dictionary + key test[key_word] where key word is the key in the loop
