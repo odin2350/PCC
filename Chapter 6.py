@@ -181,3 +181,54 @@ for test in favorite_languages.values():
         test_2.append(test)
 print(test_2)
 print(favorite_languages)
+print('\n')
+
+favorite_languages = {
+     'jen': 'python',
+     'sarah': 'c',
+     'edward': 'ruby',
+     'phil': 'python',    }
+test3 = []
+for name in sorted(favorite_languages.keys()):
+    if name not in test3:
+        test3.append(name)
+    print(name.title())
+print(str(test3).title())
+print('\n')
+
+# Try it yourself
+# 6-4 Glossary 2
+terms = {
+    'python': 'programming language',
+    'loop':'form (something) into a loop or loops; encircle.',
+    'string':'In programming, a string is a contiguous (see contiguity) sequence of symbols or value',
+    'integer': 'Integers are a commonly used data type in computer programming. For example, whenever a number is being incremented, such as within a "for loop" or "while loop," an integer is used.',
+    'boolean':'In mathematics and mathematical logic, Boolean algebra is the branch of algebra in which the values of the variables are the truth values true and false,usually denoted 1 and 0 respectively.',
+    }
+for word,meaning in terms.items():
+    print(word.title() + ' : ' + meaning.lower())
+print('\n')
+
+terms['java'] = 'programming language'
+terms['c'] = 'programming language'
+terms['microsoft'] = 'company'
+terms['linux'] = 'OS'
+terms['os'] = 'operation system'
+print("I learned next things:\n")
+for word,meaning in terms.items():
+  print(word.title() + ": " + meaning.lower() + '\n')
+
+
+rivers = {
+    'amazon': 'south america',
+    'yangtze': 'asia',
+    'nile': 'egypt',
+    'Amur':"egypt"
+    }
+for river,location in rivers.items():
+    print(river.title() + ' runs thru ' + location.title() + ".")
+print('\n')
+for river,location in rivers.items():
+    print("Country : " + location.title())
+
+
