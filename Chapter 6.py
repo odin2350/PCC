@@ -130,7 +130,7 @@ for name, language in favorite_languages.items():
 for name in favorite_languages.keys():
   print(name.title())
 print('\n') 
- 
+
 for person in favorite_languages:
     print(person.title())
 
@@ -160,3 +160,24 @@ favorite_languages = {
      'phil': 'python',    }
 for name in sorted(favorite_languages.keys(), reverse= True):
   print(name.title() + ", thank you for taking the poll.")
+print('\n')
+
+for name in sorted(favorite_languages.values()):
+  print(name.title())
+print('\n')
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
+test_2 = []
+for test in favorite_languages.values():
+    if test not in test_2:
+        test_2.append(test)
+print(test_2)
+print(favorite_languages)

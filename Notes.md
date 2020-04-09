@@ -40,10 +40,22 @@ The title( ) function doesn’t need any additional information, so its parenthe
 - square brackets [ ] indicate a list, and individual elements
 in the list are separated by commas.
 
-## Appending Elements to the End of a List
+# Appending Elements to the End of a List
 list.append('what you want to append)
 
-## Inserting Elements into a List
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+test_2 = []
+for test in favorite_languages.values():
+    if test not in test_2:
+        test_2.append(test)
+print(test_2)
+
+# Inserting Elements into a List
 You can add a new element at any position in your list by using the insert()
 method. You do this by specifying the index of the new element and the
 value of the new item.
@@ -52,7 +64,7 @@ motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles.insert(0, 'ducati')
 print(motorcycles)
 
-## Removing an Item Using the del Statement
+# Removing an Item Using the del Statement
 If you know the position of the item you want to remove from a list, you can
 use the del statement.
 motorcycles = ['honda', 'yamaha', 'suzuki']
@@ -60,7 +72,7 @@ print(motorcycles)
 del motorcycles[0]
 print(motorcycles)
 
-## Removing an Item Using the pop() Method
+# Removing an Item Using the pop() Method
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 popped_motorcycle = motorcycles.pop()
@@ -152,7 +164,7 @@ for value in range(1,11):
     squares.append(square)
 print(squares)
 
-squares = []
+# squares = []
 for value in range(1,11):
    squares.append(value**2)
 print(squares)
@@ -298,4 +310,17 @@ for person in favorite_languages:
 * The keys() method isn’t just for looping: It actually returns a list of all the keys,
 * and the line at simply checks if 'erin' is in this list.
 * Because she’s not, a message is printed inviting her to take the poll:
+
+## Set
+* Set a list only with uniqe values
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+}
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
+
 
