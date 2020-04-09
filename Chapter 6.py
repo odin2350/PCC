@@ -218,7 +218,7 @@ print("I learned next things:\n")
 for word,meaning in terms.items():
   print(word.title() + ": " + meaning.lower() + '\n')
 
-
+# 6-5
 rivers = {
     'amazon': 'south america',
     'yangtze': 'asia',
@@ -230,5 +230,30 @@ for river,location in rivers.items():
 print('\n')
 for river,location in rivers.items():
     print("Country : " + location.title())
+print('\n')
+#6-6
 
+# ask how can I make sure it compare both as lower without removing keys()
+favorite_languages = {
+'jen': 'python',
+'sarah': 'c',
+'edward': 'ruby',
+'phil': 'python',
+}
+for name in favorite_languages.keys():
+    print(name.title())
+not_polled = ['mike','jen','joey','sam', 'Phil']
+for poll in not_polled:
+    if poll.lower() in favorite_languages.keys():
+        print(poll + ' thank you for particapation.')
+    else:
+        print(poll + ' please answer the poll.')
+print('\n')
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    print(alien)
 
+    
