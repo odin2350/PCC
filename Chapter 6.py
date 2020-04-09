@@ -100,3 +100,63 @@ for key_word in test:
     print(key_word)
     
 # Looping Through a Dictionary
+
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi'
+}
+#book
+for key, value in user_0.items():
+  print('\nKey: ' + key)
+  print("Value: " + value)
+#simple loop, by default return key can specify user_0.keys()
+for keyValue in user_0:
+    print("\nKey: " + keyValue)
+    print("Value: " + user_0[keyValue])
+
+
+favorite_languages = {
+     'jen': 'python',
+     'sarah': 'c',
+     'edward': 'ruby',
+     'phil': 'python',    }
+for name, language in favorite_languages.items():
+   print(name.title() +
+         "'s favorite language is " +
+          language.title() + ".")
+
+#the same
+for name in favorite_languages.keys():
+  print(name.title())
+print('\n') 
+ 
+for person in favorite_languages:
+    print(person.title())
+
+favorite_languages = {
+     'jen': 'python',
+     'sarah': 'c',
+     'edward': 'ruby',
+     'phil': 'python',    }
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+  print(name.title())
+  if name in friends:
+     print("  Hi " + name.title() +
+           ", I see your favorite language is " +
+          favorite_languages[name].title() + "!")
+
+# The keys() method isn’t just for looping: It actually returns a list of all the keys,
+#and the line at simply checks if 'erin' is in this list.
+#Because she’s not, a message is printed inviting her to take the poll:
+if 'erin' not in favorite_languages.keys():
+  print("Erin, please take our poll!")
+print('\n')
+favorite_languages = {
+     'jen': 'python',
+     'sarah': 'c',
+     'edward': 'ruby',
+     'phil': 'python',    }
+for name in sorted(favorite_languages.keys(), reverse= True):
+  print(name.title() + ", thank you for taking the poll.")

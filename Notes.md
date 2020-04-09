@@ -273,4 +273,29 @@ for key_word in test:
     print(test[key_word])
     print(key_word)
 
+# Looping Through a Dictionary
+
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi'
+}
+#book
+for key, value in user_0.items():
+  print('\nKey: ' + key)
+  print("Value: " + value)
+
+
+* simple loop, by default return key can specify user_0.keys()
+* the same
+for name in favorite_languages.keys():
+  print(name.title())
+print('\n') 
+ 
+for person in favorite_languages:
+    print(person.title())
+
+* The keys() method isn’t just for looping: It actually returns a list of all the keys,
+* and the line at simply checks if 'erin' is in this list.
+* Because she’s not, a message is printed inviting her to take the poll:
 
