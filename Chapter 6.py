@@ -255,5 +255,133 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
 for alien in aliens:
     print(alien)
+print('\n')
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms','extra cheese']
+}
+print("Your ordered a " + pizza['crust'] + '-crust pizza ' + 'with the following toppings:')
+for topping in pizza['toppings']:
+  print('\t' + topping)
+print('\n')
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+    }
+for name, languages in favorite_languages.items():
+  if len(languages) > 1:
+    print("\n" + name.title() + "'s favorite languages are:")
+  else:
+      print("\n" + name.title() + "'s favorite language is:")
+  for language in languages:
+          print("\t" + language.title())
 
-    
+
+print('\n')
+# A Dictionary in a Dictionary
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'ptincton',
+    },
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris'
+    },
+}
+for username,user_info in users.items():
+    print('\nUsername: ' + username)
+    full_name = user_info['first'] + ' ' + user_info['last']
+    location = user_info['location']
+    print('\tFull name: ' + full_name.title())
+    print('\tLocation: ' + location.title())
+
+print('\n')
+# Try it yourself
+# 6-7 People use 6-1
+#Use a dictionary to store information about a person you know.
+#Store their first name, last name, age, and the city in which they live.
+#You should have keys such as first_name, last_name, age, and city.
+#Print each piece of information stored in your dictionary. 
+
+mike = {
+    'first_name': 'mike',
+     'last_name': 'kuzov',
+      'city': 'brooklyn',
+      }
+for data,person in mike.items():
+  print(data + " " + person)
+
+people = []
+
+person = {
+    'first_name': 'mike',
+     'last_name': 'kuzov',
+      'city': 'brooklyn',
+      }
+people.append(person)
+print(people)
+
+people = [{
+    'first_name': 'mike',
+     'last_name': 'kuzov',
+      'city': 'brooklyn',
+      },
+      {
+    'first_name': 'joey',
+     'last_name': 'ronin',
+      'city': 'paris',
+       },
+       {
+    'first_name': 'chandler',
+     'last_name': 'tribiany',
+      'city': 'manhatten',
+      }
+]
+print("here is the list of people that I know: ")
+for person in people:
+  name = person['first_name'].title() + ' ' + person['last_name'].title()
+  city = person['city'].title()
+  print(name + ", is from " + city)
+# 6-8
+pets = []
+
+doggy = {
+    'name': 'doggy',
+    'breed': 'german shepard',
+    'type': 'dog',
+    'owner': 'mike'
+}
+pets.append(doggy)
+
+kitty = {
+    'name': 'kitty',
+    'breed': 'rare',
+    'type': 'cat',
+    'owner': 'mary'
+}
+pets.append(kitty)
+
+john = {
+    'name': 'john',
+    'breed': 'street',
+    'type': 'hamster',
+    'owner': 'ricky'
+}
+pets.append(john)
+for pet in pets:
+  name = pet['name'].title()
+  breed = pet['breed'].lower()
+  typez = pet['type'].lower()
+  owner = pet['owner'].title()
+  print(owner + ' has a ' + breed + ' ' + typez + ' which name is ' + name)
+print('\n')
+for pet in pets:
+  print('\n' + "Here what I know about " + pet['name'].title())
+  for key,value in pet.items():
+    print(key.title() + ': ' + str(value).title())
+
