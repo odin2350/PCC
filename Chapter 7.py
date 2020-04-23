@@ -23,3 +23,39 @@
 #    print("\nYou're tall enough to ride!")
 #else:
 #    print("\nYou'll be able to ride when you're a little older.")
+
+#7-1. Rental Car:
+#car = input('What car are you looking for? ')
+#print("let me see if we still have " + car.title() + " left at our dealership")
+
+#7-2. Restaurant Seating
+#group_size = input("How many people in your part? ")
+#group_size = int(group_size)
+#if group_size > 8:
+#    print("I'm sorry but could you wait 15-20 minutes for the next table")
+#else:
+#    print("please follow me")
+#7-3. Multiples of Ten:
+#number = input('Please tel me your number ')
+#number = int(number)
+#if number % 10 == 0:
+#    print('you number is multiple of 10') 
+#else:
+#    print("your number is not multiple of 10")
+
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1
+print('\n')
+snumber = []
+for snumber in range(1,6):
+    print(snumber)
+
+
+prompt = "\nTell me something, and I will repeat it back to you:"
+prompt += "\nEnter 'quit' to end the program. "
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    print(message)
