@@ -1,17 +1,10 @@
-guests = ['dima', 'jack', 'mike']
-guests.insert(0, 'Kate')
-guests.insert(3, 'Jane')
-guests.insert(-1, 'Sam')
-print("Hello " + guests[0].title() + ', come to our new, bigger table.')
-print("Hello " + guests[1].title() + ', come to our new, bigger table.')
-print("Hello " + guests[2].title() + ', come to our new, bigger table.')
-print("Hello " + guests[-3].title() + ', come to our new, bigger table.')
-print("Hello " + guests[-2].title() + ', come to our new, bigger table.')
-print("Hello " + guests[-1].title() + ', come to our new, bigger table.')
+input_string = input("Enter a list elements separated by space ")
 
-
-
-numbers = [number for number in range(1,21,2)]
-print(numbers)
-middle = max(numbers)/min(numbers)
-print(middle)
+print("\n")
+userList = input_string.split()
+print("user list is ", userList)
+# Calculating the sum of input list elements
+sum1 = 0
+for num in userList:
+    sum1 += int(num)
+print("Sum = ", sum1)
