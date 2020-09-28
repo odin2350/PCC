@@ -178,24 +178,90 @@
 # for completed_model in completed_models:
 #   print(completed_model)
 
-def print_models(unprinted_designes,completed_models):
-    """
-    Simulate printing each design, until none are left.
-    Move each design to completed_models after printing.
-    """
-    while unprinted_designes:
-        current_design = unprinted_designes.pop()
-        #Simulating creating a 3d print
-        print("Printing model: " + current_design.upper())
-        completed_models.append(current_design)
+# def print_models(unprinted_designes,completed_models):
+#     """
+#     Simulate printing each design, until none are left.
+#     Move each design to completed_models after printing.
+#     """
+#     while unprinted_designes:
+#         current_design = unprinted_designes.pop()
+#         #Simulating creating a 3d print
+#         print("Printing model: " + current_design.upper())
+#         completed_models.append(current_design)
 
-def show_completed_models(complete_models):
-    """ Show all the printed models"""
-    print("\nThe following models have been printed:")
-    for complete_model in complete_models:
-        print(complete_model.capitalize())
+# def show_completed_models(complete_models):
+#     """ Show all the printed models"""
+#     print("\nThe following models have been printed:")
+#     for complete_model in complete_models:
+#         print(complete_model.capitalize())
 
-unprinted_designes = ['iphone case', 'galaxy s10 case', 'fruit bowl']
-completed_models = []
-print_models(unprinted_designes,completed_models)
-show_completed_models(completed_models)
+# unprinted_designes = ['iphone case', 'galaxy s10 case', 'fruit bowl']
+# completed_models = []
+
+# print_models(unprinted_designes,completed_models)
+# show_completed_models(completed_models)
+
+#Preventing a Function from Modifying a List
+# def print_models(unprinted_designes,completed_models):
+#     """
+#     Simulate printing each design, until none are left.
+#     Move each design to completed_models after printing.
+#     """
+#     while unprinted_designes:
+#         current_design = unprinted_designes.pop()
+#         #Simulating creating a 3d print
+#         print("Printing model: " + current_design.upper())
+#         completed_models.append(current_design)
+
+# def show_completed_models(complete_models):
+#     """ Show all the printed models"""
+#     print("\nThe following models have been printed:")
+#     for complete_model in complete_models:
+#         print(complete_model.capitalize())
+
+# unprinted_designes = ['iphone case', 'galaxy s10 case', 'fruit bowl']
+# completed_models = []
+
+# print_models(unprinted_designes[:],completed_models)
+# show_completed_models(completed_models)
+# print("\n")
+# print(unprinted_designes)
+
+
+# 8-9. Magicians: Make a list of magician’s names. Pass the list to a function
+# called show_magicians(), which prints the name of each magician in the list.
+
+# def show_magicians(magicians_names):
+#     for magician in magicians_names:
+#         print("Hello " + magician)
+
+# magicians_names = ['Eric','John','Katie']
+
+# show_magicians(magicians_names)
+
+
+# 8-10. Great Magicians: Start with a copy of your program from Exercise 8-9.
+# Write a function called make_great() that modifies the list of magicians by adding
+# the phrase the Great to each magician’s name. Call show_magicians() to
+# see that the list has actually been modified.
+
+# def show_magicians(magicians_names):
+#     for magician in magicians_names:
+#         print("Hello " + magician)
+
+# def make_great(magicians_names):
+#     great_magicians = []
+#     while magicians_names:
+#         magicians = magicians_names.pop()
+#         great_magicians = magicians + ' the Great'
+#         great_magicians.append(great_magicians)
+
+#     for great_magician in great_magicians:
+#         magicians_names.append(great_magician)
+
+
+# magicians_names = ['Eric','John','Katie']
+# show_magicians(magicians_names)
+# print("\n")
+# make_great(magicians_names)
+# show_magicians(magicians_names)
